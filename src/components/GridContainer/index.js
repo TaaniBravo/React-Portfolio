@@ -1,5 +1,5 @@
-const GridContainer = () => {
-  return <div className="grid"></div>;
+const GridContainer = ({ children }) => {
+  return <div className="grid">{children}</div>;
 };
 
 export default GridContainer;

@@ -1,5 +1,5 @@
-const GridItem = () => {
-  return <div className="grid__item"></div>;
+const GridItem = ({ children }) => {
+  return <div className="grid__item">{children}</div>;
 };
 
 export default GridItem;

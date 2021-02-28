@@ -1,11 +1,6 @@
 import React from "react";
-import Home from "../../pages/Home";
-import About from "../../pages/About";
-import Projects from "../../pages/Projects";
-import Contact from "../../pages/Contact";
-import Main from "../Main";
 import "./style.scss";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -33,12 +28,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link">
+              <Link to="#about" className="nav-link">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/Projects" className="nav-link">
+              <Link to="#projects" className="nav-link">
                 Projects
               </Link>
             </li>
@@ -50,23 +45,6 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-
-      <Main>
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Main>
     </Router>
   );
 };

@@ -1,5 +1,5 @@
-const Main = () => {
-  return <main className="custom-container"></main>;
+const Main = ({ children }) => {
+  return <main className="custom-container">{children}</main>;
 };
 
 export default Main;
