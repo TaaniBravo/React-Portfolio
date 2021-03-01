@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "animate.css";
 
 const App = () => {
   return (

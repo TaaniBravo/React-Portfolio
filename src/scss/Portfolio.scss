@@ -1,0 +1,86 @@
+@import "mixins";
+@import "variables";
+
+.grid__item {
+  color: $primaryColor;
+
+  &#home {
+    grid-area: home;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 2rem;
+
+    .heading-3 {
+      font-size: 4rem;
+      font-weight: 900;
+      margin-right: 50px;
+    }
+
+    .heading-1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-left: 50px;
+      color: $attentionColor;
+    }
+
+    .heading-2 {
+      margin-left: 150px;
+    }
+  }
+
+  &#profile-pic {
+    grid-area: profile-pic;
+  }
+
+  &#about {
+    grid-area: about;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &#proj-header {
+    grid-area: proj-header;
+    text-align: center;
+    margin-block: 2rem;
+    padding: 1rem;
+  }
+
+  &#projects {
+    grid-area: projects;
+  }
+
+  &#skillset {
+    grid-area: skillset;
+  }
+}
+
+.img__container {
+  margin-left: 2rem;
+
+  &.profile-pic {
+    margin-right: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.bio__container {
+  width: 35ch;
+}
+
+.projects__container {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillset__container {
+  width: 30ch;
+}

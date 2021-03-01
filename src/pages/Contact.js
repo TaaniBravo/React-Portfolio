@@ -2,7 +2,7 @@ import React from "react";
 import Main from "../components/Main/index";
 import GridContainer from "../components/GridContainer/index";
 import GridItem from "../components/GridItem/index";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link as a } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -10,36 +10,46 @@ const Contact = () => {
       <Main>
         <GridContainer>
           <GridItem>
-            <div class="sub-container contact">
+            <div className="sub-container contact">
               <h1>Contact Info</h1>
               <ul>
                 <li>Email: taanim@uw.edu</li>
                 <li>Phone: (360)536-5012</li>
                 <li>
-                  <Link to="https://github.com/TaaniBravo" target="_blank">
-                    <i class="fab fa-github pr-3 text-white"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="https://www.facebook.com/taanimaama"
+                  <a
+                    href="https://github.com/TaaniBravo"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <i class="fab fa-facebook pr-3 text-white"></i>
-                  </Link>
+                    <i className="fab fa-github pr-3"></i>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="https://www.linkedin.com/in/taani-maama-b86583157/"
+                  <a
+                    href="https://www.facebook.com/taanimaama"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <i class="fab fa-linkedin pr-3 text-white"></i>
-                  </Link>
+                    <i className="fab fa-facebook pr-3"></i>
+                  </a>
                 </li>
                 <li>
-                  <Link to="mailto:taanim@uw.edu" target="_blank">
-                    <i class="fas fa-envelope-open-text text-white"></i>
-                  </Link>
+                  <a
+                    href="https://www.linkedin.com/in/taani-maama-b86583157/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-linkedin pr-3"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:taanim@uw.edu"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fas fa-envelope-open-text"></i>
+                  </a>
                 </li>
               </ul>
             </div>

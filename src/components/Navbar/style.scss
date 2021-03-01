@@ -1,3 +1,18 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
 .navbar {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
+  color: $primaryColor;
+
+  .nav-link {
+    font-weight: 700;
+
+    text-decoration: none;
+    color: $primaryColor;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
 }

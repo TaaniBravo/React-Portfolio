@@ -5,10 +5,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Router>
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <Link to="/" className="navbar-brand">
-          Taani Maama
-        </Link>
+      <nav className="navbar navbar-expand-lg">
         <button
           className="navbar-toggler"
           type="button"

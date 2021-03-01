@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+  min-width: none;
+  min-height: none;
+  grid-template-columns: repeat(auto, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-areas:
+    ". home home home profile-pic profile-pic profile-pic"
+    ". home home home profile-pic profile-pic profile-pic"
+    ". about about about profile-pic profile-pic profile-pic"
+    ". about about about profile-pic profile-pic profile-pic"
+    ". proj-header proj-header proj-header . . ."
+    ". projects projects projects . skillset ."
+    ". projects projects projects . skillset .";
+}
