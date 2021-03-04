@@ -7,6 +7,7 @@ import eatDaBurger from "../images/eat-da-burger.png";
 import oneWorldAcademy from "../images/oneworldacademy.png";
 import teamBase from "../images/teambase.png";
 import fitnessTracker from "../images/fitness-tracker.png";
+import "../scss/Projects.scss";
 
 const Projects = () => {
   return (
@@ -17,6 +18,7 @@ const Projects = () => {
             <h1>Projects</h1>
           </GridItem>
           <GridItem id="projects">
+            <p className="note">*Hover over images for links and details*</p>
             <div className="projects__container">
               <div className="proj-1">
                 <div className="img__container">
@@ -133,8 +135,8 @@ const Projects = () => {
           </GridItem>
           <GridItem id="skillset">
             <div className="skillset__container">
-              <h1>Current Languages</h1>
-              <h3>And my skill level.</h3>
+              <h2 className="lang__header">Current Languages</h2>
+              <p className="lang__subheader">And my skill level.</p>
               <br />
               <div className="sub-container">
                 <ul className="language__icons">
