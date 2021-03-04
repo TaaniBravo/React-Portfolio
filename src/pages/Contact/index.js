@@ -1,7 +1,7 @@
 import React from "react";
-import Main from "../components/Main/index";
-import GridContainer from "../components/GridContainer/index";
-import GridItem from "../components/GridItem/index";
+import Main from "../../components/Main/index";
+import GridContainer from "../../components/GridContainer/index";
+import GridItem from "../../components/GridItem/index";
 import { BrowserRouter as Router, Link as a } from "react-router-dom";
 
 const Contact = () => {

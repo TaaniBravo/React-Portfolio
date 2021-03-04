@@ -1,14 +1,14 @@
-import Main from "../components/Main/index";
-import GridContainer from "../components/GridContainer/index";
-import GridItem from "../components/GridItem/index";
-import "../scss/Portfolio.scss";
-import profilePic from "../images/supremetee-cropped.jpg";
+import Main from "../../components/Main/index";
+import GridContainer from "../../components/GridContainer/index";
+import GridItem from "../../components/GridItem/index";
+import profilePic from "../../images/supremetee-cropped.jpg";
+import "./style.scss";
 
-const Portfolio = () => {
+const Home = () => {
   return (
     <div>
       <Main>
-        <GridContainer>
+        <GridContainer className="grid__home">
           <GridItem id="home">
             <h2 className="heading-1 animate__animated animate__rotateInDownLeft animate__slow">
               &#123; Dream, Develop, Create &#125;
@@ -40,4 +40,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Home;

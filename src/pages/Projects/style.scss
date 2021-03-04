@@ -1,7 +1,7 @@
-@import "mixins";
-@import "variables";
+@import "../../scss/mixins";
+@import "../../scss/variables";
 
-.grid {
+.grid__proj {
   grid-template-areas:
     ". proj-header proj-header proj-header ."
     ". projects projects skillset .";
@@ -55,12 +55,11 @@
 }
 
 .img__container {
-  position: relative;
-  margin: 0;
+  @include img-standard;
 
-  img {
-    max-width: 100%;
-    display: block;
+  &.proj__img {
+    position: relative;
+    margin: 0;
   }
 }
 
@@ -107,7 +106,7 @@
 // ********
 
 @media screen and (max-width: $laptopBreakpoint) {
-  .grid {
+  .grid__proj {
     grid-template-areas:
       ". proj-header ."
       ". projects . "
@@ -116,8 +115,19 @@
 }
 
 @media screen and (max-width: $tabletBreakpoint) {
-  .grid {
+  .grid__proj {
     padding: 0;
     gap: 1em;
+  }
+}
+
+@media screen and (max-width: $mobileBreakpoint) {
+  .grid__proj {
+    gap: 0;
+  }
+
+  .skillset__container {
+    text-align: center;
+    width: 100%;
   }
 }

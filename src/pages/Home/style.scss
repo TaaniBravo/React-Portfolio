@@ -1,0 +1,174 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.grid__home {
+  grid-template-areas:
+    ". home home home profile-pic profile-pic profile-pic"
+    ". home home home profile-pic profile-pic profile-pic"
+    ". about about about profile-pic profile-pic profile-pic"
+    ". about about about profile-pic profile-pic profile-pic";
+  gap: 2em;
+}
+
+.grid__item {
+  color: $primaryColor;
+
+  &#home {
+    grid-area: home;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 2rem;
+
+    .heading-3 {
+      font-size: 4rem;
+      font-weight: 900;
+      margin-right: 50px;
+    }
+
+    .heading-1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-left: 50px;
+      color: $attentionColor;
+    }
+
+    .heading-2 {
+      margin-left: 150px;
+    }
+  }
+
+  &#profile-pic {
+    grid-area: profile-pic;
+  }
+
+  &#about {
+    grid-area: about;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.img__container {
+  &.profile-pic {
+    margin-right: 2rem;
+  }
+
+  img {
+    max-width: 70%;
+    display: block;
+  }
+}
+
+.bio__container {
+  width: 35ch;
+}
+
+// ********
+// Media Queries
+// ********
+
+@media screen and (max-width: $laptopBreakpoint) {
+  .grid__home {
+    grid-template-areas:
+      ". profile-pic profile-pic . "
+      ". home about .";
+  }
+
+  .grid__item {
+    &#home {
+      justify-content: flex-start;
+
+      .heading-1,
+      .heading-2,
+      .heading-3 {
+        margin: 0;
+        width: 100%;
+      }
+
+      .heading-1 {
+        font-size: 1.75rem;
+      }
+
+      .heading-2 {
+        margin-left: 100px;
+        line-height: 2;
+      }
+
+      .heading-3 {
+        margin-left: 150px;
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  .img__container {
+    &.profile-pic {
+      margin: 0;
+      object-fit: scale-down;
+
+      img {
+        height: 40rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabletBreakpoint) {
+  .grid__home {
+    gap: 0;
+    grid-template-areas:
+      ". profile-pic ."
+      ". home ."
+      ". about .";
+  }
+
+  .grid__item {
+    &#home {
+      text-align: center;
+      margin: 0;
+
+      .heading-1,
+      .heading-2,
+      .heading-3 {
+        margin: 0;
+        width: 100%;
+      }
+
+      .heading-1 {
+        font-size: 1.25rem;
+      }
+
+      .heading-2 {
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+
+      .heading-3 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .img__container {
+    &.profile-pic {
+      margin: 0 0 1em 0;
+      object-fit: scale-down;
+
+      img {
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+  }
+
+  .bio__container {
+    padding: 1em;
+  }
+}

@@ -1,7 +1,7 @@
 import "./style.scss";
 
-const GridContainer = ({ children }) => {
-  return <div className="grid">{children}</div>;
+const GridContainer = ({ children, className }) => {
+  return <div className={`grid ${className}`}>{children}</div>;
 };
 
 export default GridContainer;

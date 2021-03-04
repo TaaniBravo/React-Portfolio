@@ -1,19 +1,19 @@
-import GridContainer from "../components/GridContainer";
-import GridItem from "../components/GridItem";
-import Main from "../components/Main";
-import trailChasers from "../images/trailchasers.png";
-import budgetTracker from "../images/budgettracker.png";
-import eatDaBurger from "../images/eat-da-burger.png";
-import oneWorldAcademy from "../images/oneworldacademy.png";
-import teamBase from "../images/teambase.png";
-import fitnessTracker from "../images/fitness-tracker.png";
-import "../scss/Projects.scss";
+import GridContainer from "../../components/GridContainer";
+import GridItem from "../../components/GridItem";
+import Main from "../../components/Main";
+import trailChasers from "../../images/trailchasers.png";
+import budgetTracker from "../../images/budgettracker.png";
+import eatDaBurger from "../../images/eat-da-burger.png";
+import oneWorldAcademy from "../../images/oneworldacademy.png";
+import teamBase from "../../images/teambase.png";
+import fitnessTracker from "../../images/fitness-tracker.png";
+import "./style.scss";
 
 const Projects = () => {
   return (
     <div>
       <Main>
-        <GridContainer>
+        <GridContainer className="grid__proj">
           <GridItem id="proj-header">
             <h1>Projects</h1>
           </GridItem>
@@ -21,7 +21,7 @@ const Projects = () => {
             <p className="note">*Hover over images for links and details*</p>
             <div className="projects__container">
               <div className="proj-1">
-                <div className="img__container">
+                <div className="img__container proj__img">
                   <img
                     src={oneWorldAcademy}
                     alt="One World Academy LMS"
@@ -40,7 +40,7 @@ const Projects = () => {
               </div>
               <br />
               <div className="proj-2">
-                <div className="img__container">
+                <div className="img__container proj__img">
                   <img
                     src={trailChasers}
                     alt="Trail Chasers Hiking App"
@@ -59,7 +59,7 @@ const Projects = () => {
               </div>
               <br />
               <div className="proj-3">
-                <div className="img__container">
+                <div className="img__container proj__img">
                   <img src={eatDaBurger} alt="Eat Da Burger" loading="lazy" />
                   <div className="overlay">
                     <p>Eat Da Burger</p>
@@ -74,7 +74,7 @@ const Projects = () => {
               </div>
               <br />
               <div className="proj-4">
-                <div className="img__container">
+                <div className="img__container proj__img">
                   <img
                     src={teamBase}
                     alt="TeamBase: Employee Directory"
@@ -93,7 +93,7 @@ const Projects = () => {
               </div>
               <br />
               <div className="proj-5">
-                <div className="img__container">
+                <div className="img__container proj__img">
                   <img
                     src={budgetTracker}
                     alt="Offline Budget Tracker"
@@ -113,7 +113,7 @@ const Projects = () => {
               </div>
               <br />
               <div className="proj-6">
-                <div className="img__container">
+                <div className="img__container proj__img">
                   <img
                     src={fitnessTracker}
                     alt="Daily Fitness Tracker"
