@@ -8,3 +8,9 @@
     color: $primaryColor;
   }
 }
+
+@mixin ul-tags {
+  ul {
+    list-style-type: none;
+  }
+}

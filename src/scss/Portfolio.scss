@@ -1,6 +1,14 @@
 @import "mixins";
 @import "variables";
 
+.grid {
+  grid-template-areas:
+    ". home home home profile-pic profile-pic profile-pic"
+    ". home home home profile-pic profile-pic profile-pic"
+    ". about about about profile-pic profile-pic profile-pic"
+    ". about about about profile-pic profile-pic profile-pic";
+}
+
 .grid__item {
   color: $primaryColor;
 
@@ -39,24 +47,10 @@
     display: flex;
     justify-content: flex-end;
   }
-
-  &#proj-header {
-    grid-area: proj-header;
-    text-align: center;
-    margin-block: 2rem;
-    padding: 1rem;
-  }
-
-  &#projects {
-    grid-area: projects;
-  }
-
-  &#skillset {
-    grid-area: skillset;
-  }
 }
 
 .img__container {
+  position: relative;
   margin-left: 2rem;
 
   &.profile-pic {
@@ -64,23 +58,11 @@
   }
 
   img {
-    max-width: 100%;
+    max-width: 70%;
     display: block;
   }
 }
 
 .bio__container {
   width: 35ch;
-}
-
-.projects__container {
-  padding: 2rem;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.skillset__container {
-  width: 30ch;
 }

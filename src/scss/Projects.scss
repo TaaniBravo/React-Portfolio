@@ -1,0 +1,81 @@
+.grid__item {
+  color: $primaryColor;
+
+  &#proj-header {
+    grid-area: proj-header;
+    text-align: center;
+    margin-block: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: solid 0.25rem rgba(0, 0, 0, 0.4);
+    line-height: 0.5;
+  }
+
+  &#projects {
+    grid-area: projects;
+    gap: 2em;
+  }
+
+  &#skillset {
+    grid-area: skillset;
+
+    li {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.projects__container {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillset__container {
+  width: 30ch;
+
+  h1 {
+    color: $attentionColor;
+  }
+}
+
+.img__container {
+  position: relative;
+  margin-left: 2rem;
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7); /* Black see-through */
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  font-size: clamp(0.75rem, 1rem, 1, 25rem);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  p {
+    font-size: clamp(1rem, 2rem, 3rem);
+    font-family: $headingFont;
+  }
+
+  @include a-tags;
+}
+
+.img__container:hover .overlay {
+  opacity: 1;
+}
