@@ -1,10 +1,13 @@
 import React from "react";
 import "./style.scss";
-// import { BrowserRouter as Router, Link } from "react-router-dom";
+import logo from "../../images/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand logo__tag" href="/">
+        <img src={logo} alt="Logo" />
+      </a>
       <button
         className="navbar-toggler"
         type="button"
