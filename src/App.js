@@ -6,10 +6,11 @@ import Home from "./pages/Home/index";
 import Projects from "./pages/Projects/index";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "animate.css";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <Router>
         <Header>
           <Navbar />
@@ -19,6 +20,7 @@ const App = () => {
           <Route exact strict path="/projects" component={Projects} />
           <Route exact strict path="/contact" component={Contact} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
