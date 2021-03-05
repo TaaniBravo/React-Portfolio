@@ -107,6 +107,7 @@
 
 @media screen and (max-width: $laptopBreakpoint) {
   .grid__proj {
+    max-width: 100vw;
     grid-template-areas:
       ". proj-header ."
       ". projects . "

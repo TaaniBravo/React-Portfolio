@@ -5,7 +5,7 @@ import logo from "../../images/logo.png";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand logo__tag" href="/">
+      <a className="navbar-brand logo__tag" href="/">
         <img src={logo} alt="Logo" />
       </a>
       <button
