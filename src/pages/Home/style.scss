@@ -51,13 +51,10 @@
 }
 
 .img__container {
+  @include img-standard;
+
   &.profile-pic {
     margin-right: 2rem;
-  }
-
-  img {
-    max-width: 70%;
-    display: block;
   }
 }
 

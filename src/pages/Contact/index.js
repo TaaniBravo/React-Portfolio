@@ -1,20 +1,21 @@
 import React from "react";
 import Main from "../../components/Main/index";
-import GridContainer from "../../components/GridContainer/index";
-import GridItem from "../../components/GridItem/index";
 import { BrowserRouter as Router, Link as a } from "react-router-dom";
+import "./style.scss";
 
 const Contact = () => {
   return (
     <Router>
       <Main>
-        <GridContainer>
-          <GridItem>
-            <div className="sub-container contact">
-              <h1>Contact Info</h1>
+        <section className="contact">
+          <div className="contact__container">
+            <h1>Contact Info</h1>
+            <ul>
+              <li>Email: taanim@uw.edu</li>
+              <li>Phone: (360)536-5012</li>
+            </ul>
+            <div className="icon__container">
               <ul>
-                <li>Email: taanim@uw.edu</li>
-                <li>Phone: (360)536-5012</li>
                 <li>
                   <a
                     href="https://github.com/TaaniBravo"
@@ -53,8 +54,8 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
-          </GridItem>
-        </GridContainer>
+          </div>
+        </section>
       </Main>
     </Router>
   );
