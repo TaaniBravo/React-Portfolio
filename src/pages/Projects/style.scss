@@ -7,6 +7,10 @@
     ". projects projects skillset .";
   gap: 2em;
   max-width: 100vw;
+
+  .grid__item {
+    max-width: 100vw;
+  }
 }
 
 .grid__item {
@@ -21,6 +25,7 @@
   }
 
   &#projects {
+    width: 100%;
     grid-area: projects;
     gap: 2em;
   }
@@ -73,7 +78,6 @@
   width: 100%;
   transition: 0.5s ease-in-out;
   opacity: 0;
-  font-size: clamp(0.75rem, 1rem, 1, 25rem);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -83,6 +87,7 @@
   p {
     font-size: clamp(1rem, 2rem, 3rem);
     font-family: $headingFont;
+    clear: both;
   }
 
   @include a-tags;
@@ -96,6 +101,7 @@
   color: $accentColor;
   border-bottom: 1px solid $accentColor;
   width: 50ch;
+  max-width: 100%;
   font-style: italic;
   text-align: end;
   margin: 0 2em;
@@ -107,11 +113,17 @@
 
 @media screen and (max-width: $laptopBreakpoint) {
   .grid__proj {
-    max-width: 100vw;
+    max-width: 100%;
     grid-template-areas:
       ". proj-header ."
       ". projects . "
       ". skillset .";
+
+    .skillset__container {
+      text-align: center;
+      width: 100%;
+      margin: 0;
+    }
   }
 }
 
@@ -125,10 +137,23 @@
 @media screen and (max-width: $mobileBreakpoint) {
   .grid__proj {
     gap: 0;
+
+    &#skillset {
+      grid-area: skillset;
+
+      li {
+        font-size: 1rem;
+      }
+    }
   }
 
-  .skillset__container {
-    text-align: center;
-    width: 100%;
+  .overlay {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .note {
+    margin: 0;
   }
 }
