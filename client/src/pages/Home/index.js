@@ -27,11 +27,10 @@ const Home = () => {
               an exponential rate, learning new techniques and practices in his
               pursuit to be an amazing developer. Coming out of UW's Coding
               Bootcamp he has a strong foundational knowledge of HTML, CSS,
-              JavaScript, SQL, MERN, JQuery and more technologies he continues
-              to teach himself. His background as a professional project
-              manager, and leading teams in high stress environments in past
-              careers has helped him build a solid foundation for his mindful
-              yet competitive approach.
+              JavaScript, SQL, MERN, JQuery and more. His background as a
+              professional project manager, and leading teams in high stress
+              environments in past careers has helped him build a solid
+              foundation for his mindful yet competitive approach.
             </p>
           </GridItem>
         </GridContainer>

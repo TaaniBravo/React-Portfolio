@@ -136,7 +136,6 @@ const Projects = () => {
           <GridItem id="skillset">
             <div className="skillset__container">
               <h2 className="lang__header">Current Languages</h2>
-              <p className="lang__subheader">And my skill level.</p>
               <br />
               <div className="sub-container">
                 <ul className="language__icons">
