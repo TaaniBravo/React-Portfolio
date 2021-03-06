@@ -141,22 +141,22 @@ const Projects = () => {
               <div className="sub-container">
                 <ul className="language__icons">
                   <li>
-                    <i className="fab fa-html5"></i> HTML: Strong
+                    <i className="fab fa-html5"></i> HTML
                   </li>
                   <li>
-                    <i className="fab fa-js-square"></i> JS: Strong
+                    <i className="fab fa-js-square"></i> JS
                   </li>
                   <li>
-                    <i className="fab fa-css3-alt"></i> CSS: Okay
+                    <i className="fab fa-css3-alt"></i> CSS
                   </li>
                   <li>
-                    <i className="fab fa-sass"></i> SCSS: Okay
+                    <i className="fab fa-sass"></i> SCSS
                   </li>
                   <li>
-                    <i className="fas fa-database"></i> SQL and NoSQL: Strong
+                    <i className="fas fa-database"></i> SQL and NoSQL
                   </li>
                   <li>
-                    <i className="fab fa-react"></i> ReactJS: Weak
+                    <i className="fab fa-react"></i> ReactJS
                   </li>
                 </ul>
               </div>
