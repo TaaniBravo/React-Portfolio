@@ -57,6 +57,10 @@
   .lang__subheader {
     font-size: 1.5rem;
   }
+
+  .sub-container ul {
+    padding: 0 0.25em;
+  }
 }
 
 .img__container {
@@ -155,5 +159,6 @@
 
   .note {
     margin: 0;
+    padding-right: 0.5em;
   }
 }
