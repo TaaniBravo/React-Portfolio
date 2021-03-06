@@ -1,7 +1,7 @@
 import Main from "../../components/Main/index";
 import GridContainer from "../../components/GridContainer/index";
 import GridItem from "../../components/GridItem/index";
-import profilePic from "../../images/supremetee-cropped.jpg";
+import profilePic from "../../images/tinified/supremetee-cropped.jpg";
 import "./style.scss";
 
 const Home = () => {

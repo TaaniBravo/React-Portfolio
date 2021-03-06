@@ -1,12 +1,12 @@
 import GridContainer from "../../components/GridContainer";
 import GridItem from "../../components/GridItem";
 import Main from "../../components/Main";
-import trailChasers from "../../images/trailchasers.png";
-import budgetTracker from "../../images/budgettracker.png";
-import eatDaBurger from "../../images/eat-da-burger.png";
-import oneWorldAcademy from "../../images/oneworldacademy.png";
-import teamBase from "../../images/teambase.png";
-import fitnessTracker from "../../images/fitness-tracker.png";
+import trailChasers from "../../images/tinified/trailchasers.png";
+import budgetTracker from "../../images/tinified/budgettracker.png";
+import eatDaBurger from "../../images/tinified/eat-da-burger.png";
+import oneWorldAcademy from "../../images/tinified/oneworldacademy.png";
+import teamBase from "../../images/tinified/teambase.png";
+import fitnessTracker from "../../images/tinified/fitness-tracker.png";
 import "./style.scss";
 
 const Projects = () => {
