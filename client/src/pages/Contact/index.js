@@ -2,6 +2,7 @@ import React from "react";
 import Main from "../../components/Main/index";
 import { BrowserRouter as Router, Link as a } from "react-router-dom";
 import "./style.scss";
+import resume from "../../assets/resume.docx";
 
 const Contact = () => {
   return (
@@ -13,6 +14,11 @@ const Contact = () => {
             <ul>
               <li>Email: taanim@uw.edu</li>
               <li>Phone: (360)536-5012</li>
+              <li>
+                <a className="resume" href={resume}>
+                  Resume Download
+                </a>
+              </li>
             </ul>
             <div className="icon__container">
               <ul>

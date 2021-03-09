@@ -50,6 +50,15 @@
   }
 }
 
+.resume {
+  text-decoration: underline;
+  color: $primaryColor;
+
+  &:hover {
+    color: $attentionColor;
+  }
+}
+
 // ********
 // Media Queries
 // ********
