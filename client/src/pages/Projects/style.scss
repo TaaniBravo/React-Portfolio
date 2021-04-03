@@ -89,10 +89,14 @@
   align-items: center;
   flex-flow: column;
 
-  p {
+  #proj-title {
     font-size: clamp(1rem, 2rem, 3rem);
     font-family: $headingFont;
     clear: both;
+  }
+
+  #proj-desc {
+    font-size: 1rem;
   }
 
   @include a-tags;
