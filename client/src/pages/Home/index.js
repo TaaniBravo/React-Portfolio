@@ -1,8 +1,8 @@
-import Main from "../../components/Main/index";
-import GridContainer from "../../components/GridContainer/index";
-import GridItem from "../../components/GridItem/index";
-import profilePic from "../../images/tinified/supremetee-cropped.jpg";
-import "./style.scss";
+import Main from '../../components/Main/index';
+import GridContainer from '../../components/GridContainer/index';
+import GridItem from '../../components/GridItem/index';
+import profilePic from '../../images/tinified/portfolio_pic.jpg';
+import './style.scss';
 
 const Home = () => {
   return (

@@ -109,13 +109,13 @@ const Projects = () => {
                     <i className="fab fa-css3-alt"></i> CSS
                   </li>
                   <li>
-                    <i className="fab fa-sass"></i> SCSS
+                    <i className="fab fa-sass"></i> Sass
                   </li>
                   <li>
                     <i className="fas fa-database"></i> SQL and NoSQL
                   </li>
                   <li>
-                    <i className="fab fa-react"></i> ReactJS
+                    <i className="fab fa-react"></i> React
                   </li>
                 </ul>
               </div>
