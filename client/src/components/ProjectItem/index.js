@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Button, Modal } from "react-bootstrap";
-import "./style.scss";
+import React, { useEffect, useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
+import './style.scss';
 
 const ProjectItem = ({ projNum, title, desc, image, github, liveUrl }) => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -10,12 +10,13 @@ const ProjectItem = ({ projNum, title, desc, image, github, liveUrl }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  // When the component mounts the useEffect runs a window resize function to check the user's window width.
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
 
-    window.addEventListener("resize", handleWindowResize);
+    window.addEventListener('resize', handleWindowResize);
     return () => {
-      window.removeEventListener("resize", handleWindowResize);
+      window.removeEventListener('resize', handleWindowResize);
     };
   }, []);
 

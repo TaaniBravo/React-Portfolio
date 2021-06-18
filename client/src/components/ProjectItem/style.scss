@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import '../../scss/variables';
 
 .btn-container {
   display: flex;
@@ -21,11 +21,19 @@
   a {
     color: $primaryColor;
   }
+
+  &:hover {
+    background-color: $burgundyHover;
+  }
 }
 
 #liveUrlBtn {
   background-color: $attentionColor;
   a {
     color: black;
+  }
+
+  &:hover {
+    background-color: $pinkHover;
   }
 }
