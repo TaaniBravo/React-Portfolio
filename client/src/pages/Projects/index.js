@@ -11,6 +11,23 @@ import sickFits from '../../images/tinified/sickFitsHomePage.png';
 import './style.scss';
 
 const Projects = () => {
+  const iconArray = [
+    'devicon-html5-plain-wordmark',
+    'devicon-javascript-plain',
+    'devicon-python-plain',
+    'devicon-java-plain-wordmark',
+    'devicon-css3-plain',
+    'devicon-sass-plain',
+    'devicon-mysql-plain',
+    'devicon-mongodb-plain',
+    'devicon-graphql-plain',
+    'devicon-typescript-plain',
+    'devicon-react-original-wordmark',
+    'devicon-nextjs-original'
+  ];
+
+  console.log(iconArray);
+
   return (
     <div>
       <Main>
@@ -99,24 +116,11 @@ const Projects = () => {
               <br />
               <div className="sub-container">
                 <ul className="language__icons">
-                  <li>
-                    <i className="fab fa-html5"></i> HTML
-                  </li>
-                  <li>
-                    <i className="fab fa-js-square"></i> JS
-                  </li>
-                  <li>
-                    <i className="fab fa-css3-alt"></i> CSS
-                  </li>
-                  <li>
-                    <i className="fab fa-sass"></i> Sass
-                  </li>
-                  <li>
-                    <i className="fas fa-database"></i> SQL and NoSQL
-                  </li>
-                  <li>
-                    <i className="fab fa-react"></i> React
-                  </li>
+                  {iconArray.map((icon, index) => (
+                    <li key={index}>
+                      <i className={icon}></i>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <br />
