@@ -66,6 +66,7 @@
 
 .img__container {
   @include img-standard;
+  max-width: 900px;
 
   &.proj__img {
     position: relative;

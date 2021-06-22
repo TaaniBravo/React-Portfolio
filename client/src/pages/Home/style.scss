@@ -52,6 +52,7 @@
 
 .img__container {
   @include img-standard;
+  max-width: 900px;
 
   &.profile-pic {
     margin-right: 2rem;
