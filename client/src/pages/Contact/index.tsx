@@ -1,8 +1,7 @@
 import React from "react";
 import Main from "../../components/Main/index";
-import { BrowserRouter as Router, Link as a } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./style.scss";
-import resume from "../../assets/resume.docx";
 
 const Contact = () => {
   return (
@@ -15,8 +14,8 @@ const Contact = () => {
               <li>Email: taanim@uw.edu</li>
               <li>Phone: (360)536-5012</li>
               <li>
-                <a className="resume" href={resume}>
-                  Resume Download
+                <a className="resume" target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1IDJtWQ1QEIBaTzkn8RIJay06EvorxNRG/view?usp=sharing">
+                  Resume
                 </a>
               </li>
             </ul>

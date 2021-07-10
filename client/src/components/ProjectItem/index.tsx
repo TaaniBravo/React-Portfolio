@@ -2,7 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import "./style.scss";
 
-const ProjectItem = ({ projNum, title, desc, image, github, liveUrl }) => {
+interface Props {
+  projNum: number;
+  title: string;
+  desc: string;
+  image: string;
+  github: string;
+  liveUrl: string;
+}
+
+const ProjectItem: React.FC<Props> = ({ projNum, title, desc, image, github, liveUrl }) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [show, setShow] = useState(false);
   const breakpoint = 769;
