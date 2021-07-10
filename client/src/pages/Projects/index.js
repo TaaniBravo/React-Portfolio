@@ -127,9 +127,9 @@ const Projects = () => {
               <h4>Currently working towards...</h4>
               <div className='sub-container'>
                 <ul>
-                  <li>Advanced JS Algo thinking.</li>
-                  <li>Deep knowledge base of CSS.</li>
-                  <li>ReactJS ins and outs.</li>
+                  <li>Domain Driven Design</li>
+                  <li>Data Structure Best Practices.</li>
+                  <li>Test Driven Development</li>
                 </ul>
               </div>
             </div>
