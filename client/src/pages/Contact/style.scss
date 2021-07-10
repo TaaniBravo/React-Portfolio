@@ -1,5 +1,5 @@
-@import '../../scss/mixins';
-@import '../../scss/variables';
+@import "../../scss/mixins";
+@import "../../scss/variables";
 
 .contact {
   margin: 0;
@@ -40,6 +40,14 @@
 .icon__container {
   @include a-tags;
 
+  a:hover {
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 3rem;
+  }
+
   ul {
     padding: 0;
     margin: 0;
@@ -50,13 +58,13 @@
   }
 }
 
-.resume {
-  text-decoration: underline;
-  color: $primaryColor;
+.email {
+  text-decoration: none;
+  color: $burgundy;
   transition: color ease;
 
   &:hover {
-    color: $attentionColor;
+    color: $burgundyHover;
   }
 }
 

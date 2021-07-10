@@ -26,8 +26,6 @@ const Projects = () => {
     "devicon-nextjs-original"
   ];
 
-  console.log(iconArray);
-
   return (
     <div>
       <Main>
