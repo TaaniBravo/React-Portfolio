@@ -2,7 +2,6 @@ import React from "react";
 import Main from "../../components/Main/index";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./style.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
   return (
