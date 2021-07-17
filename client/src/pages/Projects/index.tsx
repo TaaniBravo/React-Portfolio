@@ -7,7 +7,7 @@ import budgetTracker from "../../images/tinified/budgettracker.png";
 import dono from "../../images/tinified/dono.png";
 import oneWorldAcademy from "../../images/tinified/oneworldacademy.png";
 import teamBase from "../../images/tinified/teambase.png";
-// import sickFits from '../../images/tinified/sickFitsHomePage.png';
+import sickFits from "../../images/tinified/sickFitsHomePage.png";
 import "./style.scss";
 
 const Projects = () => {
@@ -95,17 +95,17 @@ const Projects = () => {
                 }
                 liveUrl={"https://on-n-offline-budget.herokuapp.com/"}
               />
-              {/* <br /> */}
-              {/* <ProjectItem
+              <br />
+              <ProjectItem
                 projNum={6}
-                title={'Sick Fits Ecommerce Site'}
+                title={"Sick Fits Ecommerce Site"}
                 desc={
-                  'A demonstrative site using Keystone TypeScript backend, Next.js, GraphQL, and Stripe API.'
+                  "A demonstrative ecommerce using Keystone TypeScript backend, Next.js, GraphQL, and Stripe API. \n NOTE: Live URL does not work because of limitations of free deployment."
                 }
                 image={sickFits}
-                github={'https://github.com/TaaniBravo/Sick-Fits'}
-                liveUrl={'https://fake-supreme.herokuapp.com/'}
-              /> */}
+                github={"https://github.com/TaaniBravo/Sick-Fits"}
+                liveUrl={"https://fake-supreme.herokuapp.com/"}
+              />
             </div>
           </GridItem>
           <GridItem id='skillset'>

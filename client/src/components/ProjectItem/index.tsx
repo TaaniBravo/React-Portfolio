@@ -11,7 +11,14 @@ interface Props {
   liveUrl: string;
 }
 
-const ProjectItem: React.FC<Props> = ({ projNum, title, desc, image, github, liveUrl }) => {
+const ProjectItem: React.FC<Props> = ({
+  projNum,
+  title,
+  desc,
+  image,
+  github,
+  liveUrl
+}) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [show, setShow] = useState(false);
   const breakpoint = 769;
@@ -42,11 +49,13 @@ const ProjectItem: React.FC<Props> = ({ projNum, title, desc, image, github, liv
                 GitHub Repo
               </a>
             </Button>
-            <Button id='liveUrlBtn'>
-              <a href={liveUrl} target='_blank' rel='noreferrer'>
-                Live URL
-              </a>
-            </Button>
+            {title.includes("Sick") ? null : (
+              <Button id='liveUrlBtn'>
+                <a href={liveUrl} target='_blank' rel='noreferrer'>
+                  Live URL
+                </a>
+              </Button>
+            )}
           </div>
         </div>
       </div>
