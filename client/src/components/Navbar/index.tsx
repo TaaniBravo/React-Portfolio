@@ -1,7 +1,7 @@
-import * as React from "react";
 import "./style.scss";
 import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
+import resume from "../../assets/resume.pdf";
 
 const Navbar = () => {
   return (
@@ -41,7 +41,7 @@ const Navbar = () => {
               className='nav-link'
               target='_blank'
               rel='noreferrer'
-              href='https://drive.google.com/file/d/1IDJtWQ1QEIBaTzkn8RIJay06EvorxNRG/view?usp=sharing'>
+              href={resume}>
               Resume
             </a>
           </li>
