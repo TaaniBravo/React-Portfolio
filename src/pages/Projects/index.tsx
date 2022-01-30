@@ -2,12 +2,12 @@ import GridContainer from '../../components/GridContainer';
 import GridItem from '../../components/GridItem';
 import Main from '../../components/Main';
 import ProjectItem from '../../components/ProjectItem';
-import trailChasers from '../../images/tinified/trailchasers.png';
-import budgetTracker from '../../images/tinified/budgettracker.png';
-import dono from '../../images/tinified/dono.png';
-import oneWorldAcademy from '../../images/tinified/oneworldacademy.png';
-import teamBase from '../../images/tinified/teambase.png';
-import sickFits from '../../images/tinified/sickFitsHomePage.png';
+import trailChasers from '../../assets/images/tinified/trailchasers.png';
+import budgetTracker from '../../assets/images/tinified/budgettracker.png';
+import dono from '../../assets/images/tinified/dono.png';
+import oneWorldAcademy from '../../assets/images/tinified/oneworldacademy.png';
+import teamBase from '../../assets/images/tinified/teambase.png';
+import sickFits from '../../assets/images/tinified/sickFitsHomePage.png';
 import './style.scss';
 
 const Projects = () => {

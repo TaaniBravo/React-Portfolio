@@ -1,7 +1,7 @@
-import "./style.scss";
-import logo from "../../images/logo.png";
-import { Link } from "react-router-dom";
-import resume from "../../assets/resume.pdf";
+import './style.scss';
+import logo from '../../assets/images/logo.png';
+import { Link } from 'react-router-dom';
+import resume from '../../assets/Taanileka_Maama_Resume.pdf';
 
 const Navbar = () => {
   return (
